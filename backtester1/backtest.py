@@ -33,7 +33,8 @@ class Portfolio(metaclass=ABCMeta):
 
     @abstractmethod
     def backtest_portfolio(self):
-        """
+        """Portfolio class requires a backtest_portfolio method that generates
+        the trading orders and a continuous equity curve.
         """
         raise NotImplementedError("backtest_portfolio() method needs to be" \
                                   "implemented!")
